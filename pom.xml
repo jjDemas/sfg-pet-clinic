@@ -56,10 +56,10 @@
         </plugins>
     </build>
     <scm>
-        <developerConnection>
-            scm:git:git@github.com:jjDemas/sfg-pet-clinic.git
-        </developerConnection>
-      <tag>sfg-pet-clinic-0.0.1</tag>
-  </scm>
+        <connection>scm:git:ssh://github.com/jjDemas/sfg-pet-clinic.git</connection>
+        <developerConnection>scm:git:ssh://github.com/jjDemas/sfg-pet-clinic.git</developerConnection>
+        <url>https://github.com/jjDemas/sfg-pet-clinic</url>
+        <tag>sfg-pet-clinic-0.0.1</tag>
+    </scm>
 
 </project>
