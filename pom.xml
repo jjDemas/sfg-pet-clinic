@@ -56,9 +56,7 @@
         </plugins>
     </build>
     <scm>
-        <connection>scm:git:ssh://github.com/jjDemas/sfg-pet-clinic.git</connection>
-        <developerConnection>scm:git:ssh://github.com/jjDemas/sfg-pet-clinic.git</developerConnection>
-        <url>https://github.com/jjDemas/sfg-pet-clinic</url>
+        <developerConnection>scm:git:git@github.com/jjDemamvns/sfg-pet-clinic.git</developerConnection>
     </scm>
 
 </project>
