@@ -5,7 +5,7 @@
 
     <groupId>guru.springframework</groupId>
     <artifactId>sfg-pet-clinic</artifactId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.0.5-SNAPSHOT</version>
 
     <modules>
         <module>pet-clinic-data</module>
@@ -37,7 +37,7 @@
             <uniqueVersion>false</uniqueVersion>
             <id>guru.springframework</id>
             <name>Pet Clinic Repository</name>
-            <url>git@github.com:jjDemas/sfg-pet-clinic.git</url>
+            <url>scm:git:git@github.com:jjDemas/sfg-pet-clinic</url>
             <layout>default</layout>
         </repository>
     </distributionManagement>
