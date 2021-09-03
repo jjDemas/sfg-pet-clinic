@@ -5,7 +5,7 @@
 
     <groupId>guru.springframework</groupId>
     <artifactId>sfg-pet-clinic</artifactId>
-    <version>0.0.6-SNAPSHOT</version>
+    <version>0.0.7-SNAPSHOT</version>
 
     <modules>
         <module>pet-clinic-data</module>
@@ -37,18 +37,11 @@
             <uniqueVersion>false</uniqueVersion>
             <id>guru.springframework</id>
             <name>sfg-pet-clinic</name>
-            <url>scm:git:git@github.com:jjDemas</url>
+            <url>https://github.com/jjDemas/</url>
             <layout>default</layout>
         </repository>
     </distributionManagement>
     <build>
-        <extensions>
-            <extension>
-                <groupId>org.apache.maven.wagon</groupId>
-                <artifactId>wagon-ssh</artifactId>
-                <version>2.4</version>
-            </extension>
-        </extensions>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

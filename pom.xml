@@ -37,7 +37,7 @@
             <uniqueVersion>false</uniqueVersion>
             <id>guru.springframework</id>
             <name>sfg-pet-clinic</name>
-            <url>https://github.com/jjDemas/</url>
+            <url>scm:git:git@github.com:jjDemas</url>
             <layout>default</layout>
         </repository>
     </distributionManagement>
