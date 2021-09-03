@@ -5,7 +5,7 @@
 
     <groupId>guru.springframework</groupId>
     <artifactId>sfg-pet-clinic</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.4-SNAPSHOT</version>
 
     <modules>
         <module>pet-clinic-data</module>
@@ -32,7 +32,15 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
-
+    <distributionManagement>
+        <repository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>guru.springframework</id>
+            <name>Pet Clinic Repository</name>
+            <url>git@github.com:jjDemas/sfg-pet-clinic.git</url>
+            <layout>default</layout>
+        </repository>
+    </distributionManagement>
     <build>
         <plugins>
             <plugin>
