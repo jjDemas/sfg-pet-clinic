@@ -16,6 +16,10 @@ public class PetTypeSDJpaService implements PetTypeService {
 
     private final PetTypeRepository petTypeRepository;
 
+    public PetTypeSDJpaService(PetTypeRepository petTypeRepository) {
+        this.petTypeRepository = petTypeRepository;
+    }
+
     @Override
     public Set<PetType> findAll() {
         Set<PetType> petTypes = new HashSet<>();
