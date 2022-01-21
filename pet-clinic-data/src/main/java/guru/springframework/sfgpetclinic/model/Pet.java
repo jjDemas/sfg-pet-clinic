@@ -1,5 +1,7 @@
 package guru.springframework.sfgpetclinic.model;
 
+import lombok.Builder;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.HashSet;
@@ -16,7 +18,7 @@ public class Pet extends BaseEntity{
     @JoinColumn(name="type_id")
     private PetType petType;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name="owner_id")
     private Owner owner;
 

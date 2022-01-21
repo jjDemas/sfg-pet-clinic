@@ -13,8 +13,8 @@ public class Visit extends BaseEntity {
     @Column(name="descriptions")
     private String descriptions;
 
-    @ManyToOne
-    @JoinColumn(name= "pet_id")
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "pet_id")
     private Pet pet;
 
     public LocalDate getDate() {

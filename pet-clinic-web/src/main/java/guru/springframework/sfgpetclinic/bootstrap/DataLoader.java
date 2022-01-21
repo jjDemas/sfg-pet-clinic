@@ -6,6 +6,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
+import java.util.HashSet;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -94,17 +95,23 @@ public class DataLoader implements CommandLineRunner {
 
         owner2.getPets().add(cat1);
 
-        System.out.println("Adding a visit");
-        Visit cat1Visit = new Visit();
-        cat1Visit.setPet(cat1);
-        cat1Visit.setDate(LocalDate.now());
-        cat1Visit.setDescriptions("Check up");
-        visitService.save(cat1Visit);
-
         System.out.println("Saving owner 2");
         ownerService.save(owner2);
 
-        System.out.println("Loaded Owner...");
+        System.out.println("Adding a visit");
+
+        Visit cat1Visit = new Visit();
+        System.out.println("Before setPet");
+        cat1Visit.setPet(cat1);
+        System.out.println("Before setDate");
+        cat1Visit.setDate(LocalDate.now());
+        System.out.println("Before setDescription");
+        cat1Visit.setDescriptions("Check up");
+
+        System.out.println("Before save");
+        visitService.save(cat1Visit);
+
+        System.out.println("Loaded Owners...");
 
         System.out.println("Loading 2 Vets...");
         Vet vet1 = new Vet();
